@@ -1,4 +1,4 @@
-module github.com/radiden/telegram-me-a-colour
+module github.com/radiden/telegram_me_a_colour
 
 go 1.17
 
