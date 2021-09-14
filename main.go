@@ -16,16 +16,16 @@ import (
 )
 
 type colorInfo struct {
-	name  string
-	color string
+	name  {}interface
+	color {}interface
 }
 
 type configType struct {
-	botKey    string
-	channelId string
+	botKey    {}interface
+	channelId {}interface
 }
 
-var Config configType
+var Config {}interface
 
 func main() {
 	Config = getConfig()
@@ -41,7 +41,7 @@ func main() {
 	http.ListenAndServe(":3333", router)
 }
 
-func getConfig() configType {
+func getConfig() {}interface {
 	config := configType{}
 
 	config.botKey = os.Getenv("BOT_KEY")
@@ -52,7 +52,7 @@ func getConfig() configType {
 	return config
 }
 
-func checkVar(val string, name string) {
+func checkVar(val {}interface, name {}interface) {
 	if len(val) == 0 {
 		log.Fatalf("set environment variable %s!\n", name)
 	}
