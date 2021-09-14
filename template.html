@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-size: 48pt;
+                background-color: #1c1c1c;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                vertical-align: middle;
+                height: 100vh;
+                width: 100vw;
+            }
+        </style>
+        <title>{{.requestStatusStr}}</title>
+        <meta http-equiv="refresh" content="3; URL=https://rai.cx/">
+    </head>
+    <body>
+        <div class="container">
+            <b style="color: {{if .success}}#7EF2AE{{else}}#F56174{{end}};">{{.requestStatusStr}}</b>
+        </div>
+    </body>
+</html>
